@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/ajax.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+    </script>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <div class="button-container">
+        <button onclick="loadKeepers()">Load Keepers</button>
+        <button onclick="loadOwners()">Load Owners</button>
+        <button onclick="showPieChart()">Load Pets Chart</button>
+        <button onclick="showEarningsChart()">Load Earnings Chart</button>
+        <button onclick="loadPetOwnerKeeperCount()">Load Pet Owner and Keeper Count</button>
+    </div>
+    <div class="content-container">
+        <div id="keepersContent" class="chart-container"></div>
+        <div id="ownersContent" class="chart-container"></div>
+        <div id="chart_div" class="chart-container"></div>
+        <div id="earnings_chart_div" class="chart-container"></div>
+        <div id="petOwnerKeeperChart" class="chart-container"></div>
+    </div>
+</body>
+</html>

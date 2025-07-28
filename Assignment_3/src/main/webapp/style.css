@@ -1,0 +1,105 @@
+/* Base HTML Styling */
+html {
+    background-color: #f0f8ff; /* Softer blue shade */
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+/* Body Styling */
+body {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white for better readability */
+    border-radius: 15px; /* More pronounced rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12), 0 6px 10px rgba(0, 0, 0, 0.08); /* Softer shadow */
+    margin: 5% auto; /* Centering body with more margin */
+    padding: 40px;
+    text-align: center;
+    max-width: 800px; /* Increased max width */
+}
+
+/* Container Styling */
+.container {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 20px; /* Added padding */
+}
+
+/* Headings */
+h1 {
+    font-family: 'Helvetica Neue', sans-serif; /* Stylish font */
+    color: #333333; /* Darker shade for better visibility */
+    margin-bottom: 20px; /* Spacing below heading */
+}
+
+/* Labels */
+label {
+    display: block; /* Full width labels */
+    text-align: left;
+    margin-bottom: 5px; /* Spacing between label and input */
+    color: #555555; /* Subtle dark grey for labels */
+    font-weight: 600; /* Bold labels */
+    width: auto; /* Auto width for flexibility */
+}
+
+/* Password Show/Hide Functionality */
+.show_password {
+    font-size: smaller;
+    text-align: left;
+    margin-top: 5px; /* Spacing above checkbox */
+}
+
+/* General Div Styling */
+div {
+    margin-bottom: 15px; /* Increased bottom margin for better spacing */
+}
+
+/* Form Inputs */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding for comfort */
+    margin-top: 5px; /* Spacing between label and input */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 4px; /* Matching border radius */
+    box-sizing: border-box; /* Ensures padding doesn't increase size */
+}
+
+/* Submit Button Enhancements */
+input[type="submit"] {
+    background-color: #4CAF50; /* Pleasant green */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s; /* Smooth transition for hover effect */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    body {
+        margin: 10px auto; /* Smaller margin on smaller screens */
+    }
+
+    label {
+        text-align: left; /* Aligning label text to left for readability */
+    }
+
+    /* Adjust font size for smaller devices */
+    h1, label, .show_password {
+        font-size: smaller;
+    }
+}
